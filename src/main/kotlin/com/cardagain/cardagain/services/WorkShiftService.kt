@@ -6,31 +6,36 @@ import com.cardagain.cardagain.repositories.WorkShiftRepository
 import kotlin.jvm.Throws
 
 class WorkShiftService(private val workShiftRepository: WorkShiftRepository) {
-    fun startWorkShift() {
+    fun startWorkShift(user: User) {
         // Confirm the user does not already have an active shift
         // Start the shift
     }
-    fun endWorkShift() {
+
+    fun endWorkShift(user: User) {
         // Confirm that the user does not have an active break or active lunch
         // End the shift
     }
-    fun startBreak() {
+
+    fun startBreak(user: User) {
         // Confirm that the user has an active shift
         // Alex: Confirm that the user is not on-lunch
         // Start the break
     }
-    fun endBreak() {
+
+    fun endBreak(user: User) {
         // Confirm that the user has an active shift
         // Alex: Confirm that the user is on-break
         // End the break
     }
-    fun startLunch() {
+
+    fun startLunch(user: User) {
         // Confirm that the user has an active shift
         // Alex: Confirm that the user is not on-break
         // Alex: Confirm that the user is on-break
         // Start the lunch
     }
-    fun endLunch(){
+
+    fun endLunch(user: User) {
         // Confirm that the user has an active shift
         // Alex: Confirm that the user is on-lunch
         // End the break
