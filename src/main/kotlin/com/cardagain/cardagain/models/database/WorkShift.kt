@@ -26,4 +26,10 @@ class WorkShift(
 
     @Column
     val breakEnd: Instant?,
+
+    @Column
+    val lunchStart: Instant?,
+
+    @Column
+    val lunchEnd: Instant?,
 )
